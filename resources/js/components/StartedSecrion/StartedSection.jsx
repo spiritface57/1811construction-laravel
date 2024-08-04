@@ -283,9 +283,7 @@ function StartedSection({}) {
                                             <ThreeDot
                                                 variant="brick-stack"
                                                 color="#ffffff"
-                                                size="small"
-                                                text=""
-                                                textColor=""
+                                                style={{ fontSize: "8px" }}
                                             />
                                         ) : (
                                             <BiMailSend size={20} />
