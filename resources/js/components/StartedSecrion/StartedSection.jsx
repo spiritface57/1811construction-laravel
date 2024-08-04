@@ -156,7 +156,7 @@ function StartedSection({}) {
     };
 
     return (
-        <section id="contact" className="get-started section">
+        <section id="contact" className="get-started section contact">
             <div className="container section-title" data-aos="fade-up">
                 <h2>Contact Us</h2>
                 <p>
@@ -283,10 +283,10 @@ function StartedSection({}) {
                                             <ThreeDot
                                                 variant="brick-stack"
                                                 color="#ffffff"
-                                                style={{ fontSize: "8px" }}
+                                                style={{ fontSize: "8px",'marginLeft':"8px" }}
                                             />
                                         ) : (
-                                            <BiMailSend size={20} />
+                                            <BiMailSend style={{ fontSize: "20px",'marginLeft':"8px" }} />
                                         )}
                                     </button>
                                 </div>
