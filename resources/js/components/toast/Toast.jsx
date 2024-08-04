@@ -17,7 +17,6 @@ export default function Toast({ type = 'info', message = '' }) {
             autoClose={1000}
             hideProgressBar={false}
             newestOnTop={false}
-            rtl={true}
             pauseOnFocusLoss
             draggable
             pauseOnHover
