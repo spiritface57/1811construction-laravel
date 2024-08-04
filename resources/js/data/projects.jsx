@@ -16,7 +16,7 @@ export const projects = [
     },
     {
         "id": 2,
-        "category": "design",
+        "category": "Basement",
         "title": "Project 2",
         "clientname": "Client B",
         "projectlocation": "Location B",
@@ -34,7 +34,7 @@ export const projects = [
     },
     {
         "id": 3,
-        "category": "repairs",
+        "category": "construction",
         "title": "Project 3",
         "clientname": "Client C",
         "projectlocation": "Location C",
@@ -49,7 +49,7 @@ export const projects = [
     },
     {
         "id": 4,
-        "category": "Basement",
+        "category": "construction",
         "title": "Project 4",
         "clientname": "Client D",
         "projectlocation": "Location D",
@@ -79,7 +79,7 @@ export const projects = [
     },
     {
         "id": 6,
-        "category": "repairs",
+        "category": "Basement",
         "title": "Project 6",
         "clientname": "Client F",
         "projectlocation": "Location F",
@@ -95,7 +95,7 @@ export const projects = [
     },
     {
         "id": 7,
-        "category": "remodeling",
+        "category": "repairs",
         "title": "Project 7",
         "clientname": "Client G",
         "projectlocation": "Location G",
@@ -125,7 +125,7 @@ export const projects = [
     },
     {
         "id": 9,
-        "category": "remodeling",
+        "category": "construction",
         "title": "Project 9",
         "clientname": "Client I",
         "projectlocation": "Location I",
@@ -140,7 +140,7 @@ export const projects = [
     },
     {
         "id": 10,
-        "category": "remodeling",
+        "category": "construction",
         "title": "Project 10",
         "clientname": "Client J",
         "projectlocation": "Location J",

@@ -28,7 +28,7 @@
     "src": "node_modules/font-awesome/fonts/fontawesome-webfont.woff2"
   },
   "resources/css/app.css": {
-    "file": "assets/app-yINiqmAr.css",
+    "file": "assets/app-BA5z-moH.css",
     "src": "resources/css/app.css",
     "isEntry": true
   },
@@ -41,12 +41,12 @@
     "src": "resources/js/assets/img/page-title-bg.jpg"
   },
   "resources/js/index.jsx": {
-    "file": "assets/index-BTfh55oD.js",
+    "file": "assets/index-CNes5Uu0.js",
     "name": "index",
     "src": "resources/js/index.jsx",
     "isEntry": true,
     "css": [
-      "assets/index-D1YRCdB0.css"
+      "assets/index-dzkgKHyk.css"
     ],
     "assets": [
       "assets/page-title-bg-C9FHbvBT.jpg",
