@@ -1,73 +1,49 @@
-import './feauture.css';
-import React,{useState} from "react";
-import { feautures } from "../../data/feautures";
-function FeautureSection() {
-  const [activeTab, setActiveTab] = useState(feautures[0].tab.target);
-  return (
-    <section id="features" className="features section">
-      <div className="container">
-        <ul
-          className="nav nav-tabs row g-2 d-flex border-bottom-1 border-light"
-          data-aos="fade-up"
-          data-aos-delay="100"
-          role="tablist"
-        >
-          {feautures.map((tabItem) => (
-            <li className="nav-item col-2" role="presentation" key={tabItem.id}>
-              <a
-                className={`nav-link ${
-                  activeTab === tabItem.tab.target ? "active show" : ""
-                }`}
-                data-bs-toggle="tab"
-                data-bs-target={`#${tabItem.tab.target}`}
-                aria-selected={activeTab === tabItem.tab.target}
-                role="tab"
-                onClick={() => setActiveTab(tabItem.tab.target)}
-                href="."
-              >
-                <h4>{tabItem.tab.title}</h4>
-              </a>
-            </li>
-          ))}
-        </ul>
+import "./feauture.css"; // Ensure correct path to your CSS file
+import React from "react";
+import { features } from "../../data/feautures"; // Ensure correct path to your data file
 
-        <div className="tab-content" data-aos="fade-up" data-aos-delay="200">
-          {feautures.map((tabItem,index) => (
-            <div
-              className={`tab-pane p-5 rounded fade ${
-                activeTab === tabItem.tab.target ? "active show" : ""
-              }`}
-              id={tabItem.tab.target}
-              role="tabpanel"
-              key={tabItem.id}
-            >
-              <div className="row">
-                <div className="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
-                  <h3>{tabItem.content.title}</h3>
-                  <p className="fst-italic">{tabItem.content.description}</p>
-                  <ul>
-                    {tabItem.content.points.map((point) => (
-                      <li key={point.id}>
-                        <i className="bi bi-check2-all"></i>{" "}
-                        <span>{point.text}</span>
-                      </li>
+function FeatureSection() {
+    return (
+        <section id="features" className="features section">
+            <div className="container">
+                {/* Main section title and description */}
+                <div className="container section-title" data-aos="fade-up">
+                    <h2>{features.mainSection.title}</h2>
+                    <p>{features.mainSection.description}</p>
+                </div>
+                <div className="row">
+                    {/* Iterate over features items */}
+                    {features.items.map((item) => (
+                        <div className="col-lg-6 col-sm-12 mb-4" key={item.id}>
+                            <div className="card">
+                                <img
+                                    src={item.content.image}
+                                    alt={item.content.title}
+                                    className="card-img-top"
+                                />
+                                <div className="card-body">
+                                    <h5 className="card-title">
+                                        {item.content.title}
+                                    </h5>
+                                    <p className="card-text">
+                                        {item.content.description}
+                                    </p>
+                                    <ul>
+                                        {item.content.points.map((point) => (
+                                            <li key={point.id}>
+                                                <i className="bi bi-check2-all"></i>{" "}
+                                                <span>{point.text}</span>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     ))}
-                  </ul>
                 </div>
-                <div className="col-lg-6 order-1 order-lg-2 text-center">
-                  <img
-                    src={tabItem.content.image}
-                    alt=""
-                    className="img-fluid"
-                  />
-                </div>
-              </div>
             </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
+        </section>
+    );
 }
 
-export default FeautureSection;
+export default FeatureSection;

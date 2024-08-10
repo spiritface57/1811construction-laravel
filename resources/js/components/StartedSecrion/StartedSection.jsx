@@ -4,6 +4,7 @@ import axios from "axios";
 import ThreeDot from "react-loading-indicators/ThreeDot";
 import { BiMailSend } from "react-icons/bi";
 import Toast from "../toast/Toast";
+import "./contactus.css";
 
 function StartedSection({}) {
     const csrfToken = document
@@ -159,10 +160,6 @@ function StartedSection({}) {
         <section id="contact" className="get-started section contact">
             <div className="container section-title" data-aos="fade-up">
                 <h2>Contact Us</h2>
-                <p>
-                    Necessitatibus eius consequatur ex aliquid fuga eum quidem
-                    sint consectetur velit
-                </p>
             </div>
             <div className="container">
                 <div className="row justify-content-between gy-4">
@@ -172,21 +169,26 @@ function StartedSection({}) {
                         data-aos-delay="100"
                     >
                         <div className="content">
-                            <h3>
-                                Minus hic non reiciendis ea possimus at quia.
-                            </h3>
+                            <h3>Get in Touch with Us</h3>
                             <p>
-                                Rem id rerum. Debitis deserunt quidem delectus
-                                expedita ducimus dolor. Aut iusto ipsa. Eos
-                                ipsum nobis ipsa soluta itaque perspiciatis fuga
-                                ipsum perspiciatis. Eum amet fugiat totam nisi
-                                possimus ut delectus dicta.
+                                Have questions or need assistance with our
+                                renovation and construction services? Our team
+                                is here to help. Whether you’re looking for more
+                                information, need a quote, or want to discuss
+                                your project in detail, we’re just a message
+                                away.
                             </p>
                             <p>
-                                Aliquam velit deserunt autem. Inventore et
-                                saepe. Tenetur suscipit eligendi labore culpa
-                                eos. Deserunt porro magni qui necessitatibus
-                                dolorem at animi cupiditate.
+                                Reach out to us through the contact form below,
+                                and we will get back to you promptly. We look
+                                forward to working with you to bring your vision
+                                to life.
+                            </p>
+                            <p>
+                                Your satisfaction is our priority. We are
+                                committed to providing exceptional service and
+                                support throughout your renovation journey. Let
+                                us know how we can assist you today!
                             </p>
                         </div>
                     </div>
@@ -200,11 +202,27 @@ function StartedSection({}) {
                             onSubmit={handleSubmit}
                             className="php-email-form rounded"
                         >
-                            <h3>Get a quote</h3>
+                            <h3>Get a Quote</h3>
                             <p>
-                                Vel nobis odio laboriosam et hic voluptatem.
-                                Inventore vitae totam. Rerum repellendus enim
-                                linead sero park flows.
+                                Ready to start your next project? Our team is
+                                here to help you transform your space with our
+                                top-notch renovation and construction services.
+                                Whether you have a detailed plan or just a rough
+                                idea, we can provide a customized quote tailored
+                                to your needs.
+                            </p>
+                            <p>
+                                Simply fill out the form below with your project
+                                details, and we'll get back to you promptly with
+                                an accurate estimate. Let’s work together to
+                                make your vision a reality!
+                            </p>
+                            <p>
+                                Have any questions or need more information
+                                before getting a quote? Feel free to reach out
+                                to us directly or schedule a consultation. We're
+                                here to ensure your project runs smoothly from
+                                start to finish.
                             </p>
                             <div className="row gy-3">
                                 <div className="col-12">
@@ -283,10 +301,18 @@ function StartedSection({}) {
                                             <ThreeDot
                                                 variant="brick-stack"
                                                 color="#ffffff"
-                                                style={{ fontSize: "8px",'marginLeft':"8px" }}
+                                                style={{
+                                                    fontSize: "8px",
+                                                    marginLeft: "8px",
+                                                }}
                                             />
                                         ) : (
-                                            <BiMailSend style={{ fontSize: "20px",'marginLeft':"8px" }} />
+                                            <BiMailSend
+                                                style={{
+                                                    fontSize: "20px",
+                                                    marginLeft: "8px",
+                                                }}
+                                            />
                                         )}
                                     </button>
                                 </div>

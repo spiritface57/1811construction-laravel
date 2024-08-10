@@ -5,47 +5,53 @@ import { HiWrenchScrewdriver } from "react-icons/hi2";
 import { FaHelmetSafety } from "react-icons/fa6";
 import { SiRenovatebot } from "react-icons/si";
 
-export const serviceItems = [
-  {
-    id: 1,
-    icon: <PiMountains size={78} className="servicon" />,
-    title: "Mountain Adventure",
-    content:
-      "Explore the majestic mountains and enjoy breathtaking views. Perfect for hiking enthusiasts and nature lovers.",
+export const services = {
+  mainSection: {
+    title: "Our Services",
+    description: "Providing high-quality renovation and construction services to transform your space and enhance your lifestyle."
   },
-  {
-    id: 2,
-    icon: <TbBuildingCommunity size={78} className="servicon" />,
-    title: "Serene Landscapes",
-    content:
-      "Experience the tranquility of serene landscapes. Ideal for a peaceful retreat and unwinding from the daily hustle.",
-  },
-  {
-    id: 3,
-    icon: <HiWrenchScrewdriver size={78} className="servicon" />,
-    title: "Wildlife Safari",
-    content:
-      "Join us on a thrilling wildlife safari. Get up close with nature and witness the beauty of diverse wildlife.",
-  },
-  {
-    id: 4,
-    icon: <SiRenovatebot size={78} className="servicon" />,
-    title: "River Rafting",
-    content:
-      "Feel the adrenaline rush with our exciting river rafting adventures. Perfect for adventure seekers and water enthusiasts.",
-  },
-  {
-    id: 5,
-    icon: <FaHelmetSafety size={78} className="servicon" />,
-    title: "Camping Under the Stars",
-    content:
-      "Enjoy a night under the stars with our camping packages. Experience the joy of outdoor living and connect with nature.",
-  },
-  {
-    id: 6,
-    icon: <PiMountains size={78} className="servicon" />,
-    title: "Snowy Peaks",
-    content:
-      "Discover the beauty of snowy peaks and enjoy winter sports. Ideal for skiers, snowboarders, and winter lovers.",
-  },
-];
+  items: [
+    {
+      id: 1,
+      title: "Kitchen Renovations",
+      description: "Transform your kitchen into the heart of your home with our custom renovation services. Whether you're dreaming of a sleek modern kitchen, a cozy farmhouse style, or a functional chef's paradise, our team will design and build a space that reflects your taste and enhances your lifestyle.",
+      icon: <PiMountains size={78} className="servicon" /> // Update with relevant icon
+    },
+    {
+      id: 2,
+      title: "Home Additions",
+      description: "Expand your living space with our home addition services. Whether you need an extra bedroom, a home office, or a larger living area, we manage the entire process from design to construction, ensuring seamless integration with your existing home.",
+      icon: <TbBuildingCommunity size={78} className="servicon" /> // Update with relevant icon
+    },
+    {
+      id: 3,
+      title: "Basement Finishing",
+      description: "Unlock the full potential of your home with our basement finishing services. Whether you envision a cozy family room, a stylish entertainment space, or a practical home office, we bring your ideas to life.",
+      icon: <HiWrenchScrewdriver size={78} className="servicon" /> // Update with relevant icon
+    },
+    {
+      id: 4,
+      title: "Bathroom Remodeling",
+      description: "Revitalize your bathroom with our comprehensive remodeling services. From luxurious spa-like retreats to modern and functional designs, we tailor each project to your needs and style preferences.",
+      icon: <FaHelmetSafety size={78} className="servicon" /> // Update with relevant icon
+    },
+    {
+      id: 5,
+      title: "Painting",
+      description: "Refresh your home's interior and exterior with our professional painting services. Our meticulous attention to detail ensures a flawless finish that enhances your home's aesthetic appeal.",
+      icon: <SiRenovatebot size={78} className="servicon" /> // Update with relevant icon
+    },
+    {
+      id: 6,
+      title: "Flooring",
+      description: "Upgrade your floors with our wide range of flooring options. From hardwood and laminate to tile and vinyl, we provide expert installation and superior craftsmanship.",
+      icon: <PiMountains size={78} className="servicon" /> // Update with relevant icon
+    },
+    {
+      id: 7,
+      title: "General Contracting",
+      description: "As experienced general contractors, we manage every aspect of your renovation project with precision and care. From project planning and scheduling to budget management and quality control, we ensure a seamless process from start to finish.",
+      icon: <TbBuildingCommunity size={78} className="servicon" /> // Update with relevant icon
+    },
+  ]
+};

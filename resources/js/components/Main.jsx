@@ -21,9 +21,9 @@ const Main = () => {
       <div id="services" ref={refs.services}>
         <Services />
       </div>
-      <div id="alt-services" ref={refs.altServices}>
+      {/* <div id="alt-services" ref={refs.altServices}>
         <AltServices />
-      </div>
+      </div> */}
       <div id="features" ref={refs.features}>
         <FeautureSection />
       </div>

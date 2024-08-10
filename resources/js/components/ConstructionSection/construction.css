@@ -1,0 +1,29 @@
+.card-item {
+    overflow: hidden; /* Ensure the content stays within its container */
+    transition: transform 0.3s ease;
+}
+
+.card-item:hover {
+    transform: scale(0.95); /* Zoom out the entire card */
+}
+
+.card-item .card-bg {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-item .card-bg img {
+    width: 100%; /* Ensure the image fills the container */
+    
+}
+#about .card-body p {
+    min-height: 200px;
+  }
+
+  @media (max-width: 1192px) {
+    #about .card-body p {
+        min-height: 100px;
+      }
+  }
