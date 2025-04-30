@@ -194,7 +194,7 @@ function StartedSection({}) {
                     </div>
 
                     <div
-                        className="col-lg-5"
+                        className="col-lg-6"
                         data-aos="zoom-in"
                         data-aos-delay="200"
                     >
